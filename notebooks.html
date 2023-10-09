@@ -1,0 +1,2590 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Codigos para obtener el resultado de mis estudios &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Notebooks with MyST Markdown" href="markdown-notebooks.html" />
+    <link rel="prev" title="Markdown Files" href="markdown.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    UN MODELO HIBRIDO PARA PREDECIR EL RENDIMIENTO ACADEMICO DE LOS ESTUDIANTES DE SECUNDARIA DE DOS ESCUELAS EN PORTUGAL.
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Codigos para obtener el resultado de mis estudios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fnotebooks.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/notebooks.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Codigos para obtener el resultado de mis estudios</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="codigos-para-obtener-el-resultado-de-mis-estudios">
+<h1>Codigos para obtener el resultado de mis estudios<a class="headerlink" href="#codigos-para-obtener-el-resultado-de-mis-estudios" title="Permalink to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">warnings</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s2">&quot;ignore&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">scipy.stats</span> <span class="k">as</span> <span class="nn">stats</span>
+<span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span>
+<span class="kn">from</span> <span class="nn">sklearn.manifold</span> <span class="kn">import</span> <span class="n">MDS</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">StackingRegressor</span>
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LinearRegression</span>
+<span class="kn">import</span> <span class="nn">xgboost</span> <span class="k">as</span> <span class="nn">xgb</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;C:/Users/GINA/Downloads/student-mat.csv&#39;</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>school</th>
+      <th>sex</th>
+      <th>age</th>
+      <th>address</th>
+      <th>famsize</th>
+      <th>Pstatus</th>
+      <th>Medu</th>
+      <th>Fedu</th>
+      <th>Mjob</th>
+      <th>Fjob</th>
+      <th>...</th>
+      <th>famrel</th>
+      <th>freetime</th>
+      <th>goout</th>
+      <th>Dalc</th>
+      <th>Walc</th>
+      <th>health</th>
+      <th>absences</th>
+      <th>G1</th>
+      <th>G2</th>
+      <th>G3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>GP</td>
+      <td>F</td>
+      <td>18</td>
+      <td>U</td>
+      <td>GT3</td>
+      <td>A</td>
+      <td>4</td>
+      <td>4</td>
+      <td>at_home</td>
+      <td>teacher</td>
+      <td>...</td>
+      <td>4</td>
+      <td>3</td>
+      <td>4</td>
+      <td>1</td>
+      <td>1</td>
+      <td>3</td>
+      <td>6</td>
+      <td>5</td>
+      <td>6</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>GP</td>
+      <td>F</td>
+      <td>17</td>
+      <td>U</td>
+      <td>GT3</td>
+      <td>T</td>
+      <td>1</td>
+      <td>1</td>
+      <td>at_home</td>
+      <td>other</td>
+      <td>...</td>
+      <td>5</td>
+      <td>3</td>
+      <td>3</td>
+      <td>1</td>
+      <td>1</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>5</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>GP</td>
+      <td>F</td>
+      <td>15</td>
+      <td>U</td>
+      <td>LE3</td>
+      <td>T</td>
+      <td>1</td>
+      <td>1</td>
+      <td>at_home</td>
+      <td>other</td>
+      <td>...</td>
+      <td>4</td>
+      <td>3</td>
+      <td>2</td>
+      <td>2</td>
+      <td>3</td>
+      <td>3</td>
+      <td>10</td>
+      <td>7</td>
+      <td>8</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>GP</td>
+      <td>F</td>
+      <td>15</td>
+      <td>U</td>
+      <td>GT3</td>
+      <td>T</td>
+      <td>4</td>
+      <td>2</td>
+      <td>health</td>
+      <td>services</td>
+      <td>...</td>
+      <td>3</td>
+      <td>2</td>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td>5</td>
+      <td>2</td>
+      <td>15</td>
+      <td>14</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>GP</td>
+      <td>F</td>
+      <td>16</td>
+      <td>U</td>
+      <td>GT3</td>
+      <td>T</td>
+      <td>3</td>
+      <td>3</td>
+      <td>other</td>
+      <td>other</td>
+      <td>...</td>
+      <td>4</td>
+      <td>3</td>
+      <td>2</td>
+      <td>1</td>
+      <td>2</td>
+      <td>5</td>
+      <td>4</td>
+      <td>6</td>
+      <td>10</td>
+      <td>10</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 33 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Verificar datos faltantes</span>
+<span class="n">missing_data</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+
+<span class="c1"># Porcentaje de datos faltantes</span>
+<span class="n">missing_percentage</span> <span class="o">=</span> <span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">))</span> <span class="o">*</span> <span class="mi">100</span>
+
+<span class="n">missing_summary</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;Total missing&quot;</span><span class="p">:</span> <span class="n">missing_data</span><span class="p">,</span> <span class="s2">&quot;Percentage&quot;</span><span class="p">:</span> <span class="n">missing_percentage</span><span class="p">})</span>
+<span class="n">missing_summary</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s2">&quot;Percentage&quot;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Total missing</th>
+      <th>Percentage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>school</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>paid</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>G2</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>G1</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>absences</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>health</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Walc</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Dalc</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>goout</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>freetime</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>famrel</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>romantic</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>internet</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>higher</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>nursery</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>activities</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>famsup</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>sex</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>schoolsup</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>failures</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>studytime</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>traveltime</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>guardian</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>reason</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Fjob</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Mjob</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Fedu</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Medu</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Pstatus</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>famsize</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>address</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>age</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>G3</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Verificar datos faltantes</span>
+<span class="n">missing_data</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+
+<span class="c1"># Porcentaje de datos faltantes</span>
+<span class="n">missing_percentage</span> <span class="o">=</span> <span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">))</span> <span class="o">*</span> <span class="mi">100</span>
+
+<span class="n">missing_summary</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;Total missing&quot;</span><span class="p">:</span> <span class="n">missing_data</span><span class="p">,</span> <span class="s2">&quot;Percentage&quot;</span><span class="p">:</span> <span class="n">missing_percentage</span><span class="p">})</span>
+<span class="n">missing_summary</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s2">&quot;Percentage&quot;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Total missing</th>
+      <th>Percentage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>school</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>paid</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>G2</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>G1</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>absences</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>health</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Walc</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Dalc</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>goout</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>freetime</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>famrel</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>romantic</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>internet</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>higher</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>nursery</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>activities</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>famsup</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>sex</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>schoolsup</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>failures</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>studytime</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>traveltime</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>guardian</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>reason</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Fjob</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Mjob</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Fedu</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Medu</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Pstatus</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>famsize</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>address</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>age</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>G3</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Calcular la correlación de Spearman y p-values</span>
+<span class="n">correlation</span><span class="p">,</span> <span class="n">p_values</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">spearmanr</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+
+<span class="c1"># Crear un heatmap con los p-values</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">12</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">p_values</span><span class="p">,</span> <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s2">&quot;.2g&quot;</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;coolwarm&#39;</span><span class="p">,</span> <span class="n">cbar_kws</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;label&#39;</span><span class="p">:</span> <span class="s1">&#39;p-value&#39;</span><span class="p">})</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;P-values for Spearman Correlation&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/3bf13ed7d25b4e2a1db232a2885c14a2f3aedd9f96e371425cfaa2f32ca25131.png" src="_images/3bf13ed7d25b4e2a1db232a2885c14a2f3aedd9f96e371425cfaa2f32ca25131.png" />
+</div>
+</div>
+<p>se realiza la matrix para identificar los p-valores de todas mis variables y visualizar su relacion.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Filtrar las correlaciones donde p-value &lt; 0.05</span>
+<span class="n">significant_corr</span> <span class="o">=</span> <span class="n">correlation</span> <span class="o">*</span> <span class="p">(</span><span class="n">p_values</span> <span class="o">&lt;</span> <span class="mf">0.05</span><span class="p">)</span>
+
+<span class="c1"># Crear un heatmap con las correlaciones significativas</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">12</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">significant_corr</span><span class="p">,</span> <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s2">&quot;.2g&quot;</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;coolwarm&#39;</span><span class="p">,</span> <span class="n">center</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">cbar_kws</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;label&#39;</span><span class="p">:</span> <span class="s1">&#39;Spearman Correlation&#39;</span><span class="p">})</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Significant Spearman Correlations (p-value &lt; 0.05)&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/1ad0f56fe4042da3dd3b9d0346ba09b4731a77c47d153d6004fb944c34e5584b.png" src="_images/1ad0f56fe4042da3dd3b9d0346ba09b4731a77c47d153d6004fb944c34e5584b.png" />
+</div>
+</div>
+<p>El codigo anterior filtra las correlaciones donde el p-value es menor que 0.05 y crea un mapa de calor con las correlaciones significativas con el fin de identificar relaciones estadísticamente significativas entre mis variables.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Seleccionar solo las columnas numéricas</span>
+<span class="n">columnas_numericas</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;number&#39;</span><span class="p">])</span>
+
+<span class="c1"># Calcular la correlación de Spearman entre las columnas numéricas</span>
+<span class="n">correlacion_spearman</span> <span class="o">=</span> <span class="n">columnas_numericas</span><span class="o">.</span><span class="n">corr</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s1">&#39;spearman&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">correlacion_spearman</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>age</th>
+      <th>Medu</th>
+      <th>Fedu</th>
+      <th>traveltime</th>
+      <th>studytime</th>
+      <th>failures</th>
+      <th>famrel</th>
+      <th>freetime</th>
+      <th>goout</th>
+      <th>Dalc</th>
+      <th>Walc</th>
+      <th>health</th>
+      <th>absences</th>
+      <th>G1</th>
+      <th>G2</th>
+      <th>G3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>age</th>
+      <td>1.000000</td>
+      <td>-0.161294</td>
+      <td>-0.149596</td>
+      <td>0.109804</td>
+      <td>0.031557</td>
+      <td>0.236464</td>
+      <td>0.031380</td>
+      <td>0.000302</td>
+      <td>0.140131</td>
+      <td>0.097073</td>
+      <td>0.132799</td>
+      <td>-0.075150</td>
+      <td>0.149276</td>
+      <td>-0.057630</td>
+      <td>-0.167622</td>
+      <td>-0.173438</td>
+    </tr>
+    <tr>
+      <th>Medu</th>
+      <td>-0.161294</td>
+      <td>1.000000</td>
+      <td>0.631577</td>
+      <td>-0.147849</td>
+      <td>0.063498</td>
+      <td>-0.242373</td>
+      <td>0.012361</td>
+      <td>0.028493</td>
+      <td>0.064954</td>
+      <td>0.022729</td>
+      <td>-0.044332</td>
+      <td>-0.035686</td>
+      <td>0.097562</td>
+      <td>0.209662</td>
+      <td>0.236354</td>
+      <td>0.225036</td>
+    </tr>
+    <tr>
+      <th>Fedu</th>
+      <td>-0.149596</td>
+      <td>0.631577</td>
+      <td>1.000000</td>
+      <td>-0.154454</td>
+      <td>0.018429</td>
+      <td>-0.236616</td>
+      <td>0.011400</td>
+      <td>-0.017132</td>
+      <td>0.047961</td>
+      <td>0.003994</td>
+      <td>-0.014486</td>
+      <td>0.018113</td>
+      <td>0.003568</td>
+      <td>0.194737</td>
+      <td>0.194844</td>
+      <td>0.170049</td>
+    </tr>
+    <tr>
+      <th>traveltime</th>
+      <td>0.109804</td>
+      <td>-0.147849</td>
+      <td>-0.154454</td>
+      <td>1.000000</td>
+      <td>-0.105969</td>
+      <td>0.079917</td>
+      <td>-0.038656</td>
+      <td>-0.022279</td>
+      <td>-0.001430</td>
+      <td>0.066477</td>
+      <td>0.063654</td>
+      <td>-0.015452</td>
+      <td>-0.025061</td>
+      <td>-0.085501</td>
+      <td>-0.123795</td>
+      <td>-0.120530</td>
+    </tr>
+    <tr>
+      <th>studytime</th>
+      <td>0.031557</td>
+      <td>0.063498</td>
+      <td>0.018429</td>
+      <td>-0.105969</td>
+      <td>1.000000</td>
+      <td>-0.157633</td>
+      <td>0.058141</td>
+      <td>-0.131321</td>
+      <td>-0.065979</td>
+      <td>-0.217904</td>
+      <td>-0.264021</td>
+      <td>-0.091497</td>
+      <td>-0.046180</td>
+      <td>0.162286</td>
+      <td>0.129160</td>
+      <td>0.105170</td>
+    </tr>
+    <tr>
+      <th>failures</th>
+      <td>0.236464</td>
+      <td>-0.242373</td>
+      <td>-0.236616</td>
+      <td>0.079917</td>
+      <td>-0.157633</td>
+      <td>1.000000</td>
+      <td>-0.051389</td>
+      <td>0.088058</td>
+      <td>0.105419</td>
+      <td>0.187492</td>
+      <td>0.127912</td>
+      <td>0.079688</td>
+      <td>0.096028</td>
+      <td>-0.346052</td>
+      <td>-0.362357</td>
+      <td>-0.361224</td>
+    </tr>
+    <tr>
+      <th>famrel</th>
+      <td>0.031380</td>
+      <td>0.012361</td>
+      <td>0.011400</td>
+      <td>-0.038656</td>
+      <td>0.058141</td>
+      <td>-0.051389</td>
+      <td>1.000000</td>
+      <td>0.143142</td>
+      <td>0.063549</td>
+      <td>-0.106338</td>
+      <td>-0.116060</td>
+      <td>0.085341</td>
+      <td>-0.086577</td>
+      <td>0.026433</td>
+      <td>0.008165</td>
+      <td>0.054977</td>
+    </tr>
+    <tr>
+      <th>freetime</th>
+      <td>0.000302</td>
+      <td>0.028493</td>
+      <td>-0.017132</td>
+      <td>-0.022279</td>
+      <td>-0.131321</td>
+      <td>0.088058</td>
+      <td>0.143142</td>
+      <td>1.000000</td>
+      <td>0.285182</td>
+      <td>0.194223</td>
+      <td>0.130246</td>
+      <td>0.088975</td>
+      <td>0.013397</td>
+      <td>0.006973</td>
+      <td>-0.016765</td>
+      <td>-0.004994</td>
+    </tr>
+    <tr>
+      <th>goout</th>
+      <td>0.140131</td>
+      <td>0.064954</td>
+      <td>0.047961</td>
+      <td>-0.001430</td>
+      <td>-0.065979</td>
+      <td>0.105419</td>
+      <td>0.063549</td>
+      <td>0.285182</td>
+      <td>1.000000</td>
+      <td>0.255146</td>
+      <td>0.393333</td>
+      <td>-0.018541</td>
+      <td>0.133280</td>
+      <td>-0.151636</td>
+      <td>-0.160985</td>
+      <td>-0.166119</td>
+    </tr>
+    <tr>
+      <th>Dalc</th>
+      <td>0.097073</td>
+      <td>0.022729</td>
+      <td>0.003994</td>
+      <td>0.066477</td>
+      <td>-0.217904</td>
+      <td>0.187492</td>
+      <td>-0.106338</td>
+      <td>0.194223</td>
+      <td>0.255146</td>
+      <td>1.000000</td>
+      <td>0.639906</td>
+      <td>0.095139</td>
+      <td>0.129651</td>
+      <td>-0.111438</td>
+      <td>-0.110086</td>
+      <td>-0.120944</td>
+    </tr>
+    <tr>
+      <th>Walc</th>
+      <td>0.132799</td>
+      <td>-0.044332</td>
+      <td>-0.014486</td>
+      <td>0.063654</td>
+      <td>-0.264021</td>
+      <td>0.127912</td>
+      <td>-0.116060</td>
+      <td>0.130246</td>
+      <td>0.393333</td>
+      <td>0.639906</td>
+      <td>1.000000</td>
+      <td>0.093625</td>
+      <td>0.208508</td>
+      <td>-0.108368</td>
+      <td>-0.109144</td>
+      <td>-0.104459</td>
+    </tr>
+    <tr>
+      <th>health</th>
+      <td>-0.075150</td>
+      <td>-0.035686</td>
+      <td>0.018113</td>
+      <td>-0.015452</td>
+      <td>-0.091497</td>
+      <td>0.079688</td>
+      <td>0.085341</td>
+      <td>0.088975</td>
+      <td>-0.018541</td>
+      <td>0.095139</td>
+      <td>0.093625</td>
+      <td>1.000000</td>
+      <td>-0.070132</td>
+      <td>-0.052224</td>
+      <td>-0.050900</td>
+      <td>-0.047790</td>
+    </tr>
+    <tr>
+      <th>absences</th>
+      <td>0.149276</td>
+      <td>0.097562</td>
+      <td>0.003568</td>
+      <td>-0.025061</td>
+      <td>-0.046180</td>
+      <td>0.096028</td>
+      <td>-0.086577</td>
+      <td>0.013397</td>
+      <td>0.133280</td>
+      <td>0.129651</td>
+      <td>0.208508</td>
+      <td>-0.070132</td>
+      <td>1.000000</td>
+      <td>0.004479</td>
+      <td>-0.033600</td>
+      <td>0.017731</td>
+    </tr>
+    <tr>
+      <th>G1</th>
+      <td>-0.057630</td>
+      <td>0.209662</td>
+      <td>0.194737</td>
+      <td>-0.085501</td>
+      <td>0.162286</td>
+      <td>-0.346052</td>
+      <td>0.026433</td>
+      <td>0.006973</td>
+      <td>-0.151636</td>
+      <td>-0.111438</td>
+      <td>-0.108368</td>
+      <td>-0.052224</td>
+      <td>0.004479</td>
+      <td>1.000000</td>
+      <td>0.894792</td>
+      <td>0.878001</td>
+    </tr>
+    <tr>
+      <th>G2</th>
+      <td>-0.167622</td>
+      <td>0.236354</td>
+      <td>0.194844</td>
+      <td>-0.123795</td>
+      <td>0.129160</td>
+      <td>-0.362357</td>
+      <td>0.008165</td>
+      <td>-0.016765</td>
+      <td>-0.160985</td>
+      <td>-0.110086</td>
+      <td>-0.109144</td>
+      <td>-0.050900</td>
+      <td>-0.033600</td>
+      <td>0.894792</td>
+      <td>1.000000</td>
+      <td>0.957125</td>
+    </tr>
+    <tr>
+      <th>G3</th>
+      <td>-0.173438</td>
+      <td>0.225036</td>
+      <td>0.170049</td>
+      <td>-0.120530</td>
+      <td>0.105170</td>
+      <td>-0.361224</td>
+      <td>0.054977</td>
+      <td>-0.004994</td>
+      <td>-0.166119</td>
+      <td>-0.120944</td>
+      <td>-0.104459</td>
+      <td>-0.047790</td>
+      <td>0.017731</td>
+      <td>0.878001</td>
+      <td>0.957125</td>
+      <td>1.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>Los datos anteriores muestran las correlaciones entre diferentes variables. Cada número  representa el coeficiente de correlación entre dos variables específicas. Aquí hay una interpretación general de algunas de las correlaciones notables:</p>
+<p>-Salud (health):</p>
+<p>Tiene una correlación negativa débil con las notas (G1, G2 y G3).</p>
+<p>-Ausencias (absences):</p>
+<p>Tiene una correlación positiva moderada con el número de fallas escolares (failures).
+Tiene una correlación negativa débil con las notas (G1, G2 y G3).</p>
+<p>-Notas (G1, G2 y G3):</p>
+<p>Las tres notas tienen correlaciones positivas fuertes entre sí, lo que indica que los estudiantes que obtienen buenas notas en un período tienden a obtener buenas notas en los períodos siguientes.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df1</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;G1&#39;</span><span class="p">,</span> <span class="s1">&#39;G2&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">df1</span><span class="o">.</span><span class="n">G3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>395
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df1</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 395 entries, 0 to 394
+Data columns (total 31 columns):
+ #   Column      Non-Null Count  Dtype 
+---  ------      --------------  ----- 
+ 0   school      395 non-null    object
+ 1   sex         395 non-null    object
+ 2   age         395 non-null    int64 
+ 3   address     395 non-null    object
+ 4   famsize     395 non-null    object
+ 5   Pstatus     395 non-null    object
+ 6   Medu        395 non-null    int64 
+ 7   Fedu        395 non-null    int64 
+ 8   Mjob        395 non-null    object
+ 9   Fjob        395 non-null    object
+ 10  reason      395 non-null    object
+ 11  guardian    395 non-null    object
+ 12  traveltime  395 non-null    int64 
+ 13  studytime   395 non-null    int64 
+ 14  failures    395 non-null    int64 
+ 15  schoolsup   395 non-null    object
+ 16  famsup      395 non-null    object
+ 17  paid        395 non-null    object
+ 18  activities  395 non-null    object
+ 19  nursery     395 non-null    object
+ 20  higher      395 non-null    object
+ 21  internet    395 non-null    object
+ 22  romantic    395 non-null    object
+ 23  famrel      395 non-null    int64 
+ 24  freetime    395 non-null    int64 
+ 25  goout       395 non-null    int64 
+ 26  Dalc        395 non-null    int64 
+ 27  Walc        395 non-null    int64 
+ 28  health      395 non-null    int64 
+ 29  absences    395 non-null    int64 
+ 30  G3          395 non-null    int64 
+dtypes: int64(14), object(17)
+memory usage: 95.8+ KB
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Escalamos los datos ya que tanto PCA como MDS se benefician del escalado</span>
+<span class="n">scaler</span> <span class="o">=</span> <span class="n">StandardScaler</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Codificar las variables categóricas usando codificación one-hot</span>
+<span class="n">df1_encoded</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">df1</span><span class="p">,</span> <span class="n">drop_first</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Escalar los datos codificados</span>
+<span class="n">df1_scaled_encoded</span> <span class="o">=</span> <span class="n">scaler</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df1_encoded</span><span class="p">)</span>
+
+<span class="n">pca</span> <span class="o">=</span> <span class="n">PCA</span><span class="p">()</span>
+<span class="n">df1_pca_encoded</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df1_scaled_encoded</span><span class="p">)</span>
+<span class="n">num_components_encoded</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">pca</span><span class="o">.</span><span class="n">explained_variance_</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">df1_pca_encoded</span> <span class="o">=</span> <span class="n">df1_pca_encoded</span><span class="p">[:,</span> <span class="p">:</span><span class="n">num_components_encoded</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Re-definir MDS y realizar la transformación</span>
+<span class="n">mds</span> <span class="o">=</span> <span class="n">MDS</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+<span class="n">df1_mds_encoded</span> <span class="o">=</span> <span class="n">mds</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df1_scaled_encoded</span><span class="p">)</span>
+
+<span class="n">df1_pca_encoded</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">df1_mds_encoded</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>((395, 17), (395, 3))
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Seleccionar solo las columnas numéricas de df1</span>
+<span class="n">df1_numeric</span> <span class="o">=</span> <span class="n">df1</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;float64&#39;</span><span class="p">,</span> <span class="s1">&#39;int64&#39;</span><span class="p">])</span>
+
+<span class="c1"># Escalar las variables numéricas</span>
+<span class="n">df1_numeric_scaled</span> <span class="o">=</span> <span class="n">scaler</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df1_numeric</span><span class="p">)</span>
+
+<span class="c1"># Aplicar PCA</span>
+<span class="n">df1_pca_numeric</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df1_numeric_scaled</span><span class="p">)</span>
+<span class="n">num_components_numeric</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">pca</span><span class="o">.</span><span class="n">explained_variance_</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">df1_pca_numeric</span> <span class="o">=</span> <span class="n">df1_pca_numeric</span><span class="p">[:,</span> <span class="p">:</span><span class="n">num_components_numeric</span><span class="p">]</span>
+
+<span class="n">df1_pca_numeric</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(395, 6)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Separar la variable objetivo</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">df1</span><span class="p">[</span><span class="s2">&quot;G3&quot;</span><span class="p">]</span>
+
+<span class="c1"># Dividir el dataframe df1_pca_encoded en conjuntos de entrenamiento y prueba</span>
+<span class="n">X_train_pca</span><span class="p">,</span> <span class="n">X_test_pca</span><span class="p">,</span> <span class="n">y_train_pca</span><span class="p">,</span> <span class="n">y_test_pca</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">df1_pca_encoded</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+
+<span class="c1"># Dividir el dataframe df1_mds_encoded en conjuntos de entrenamiento y prueba</span>
+<span class="n">X_train_mds</span><span class="p">,</span> <span class="n">X_test_mds</span><span class="p">,</span> <span class="n">y_train_mds</span><span class="p">,</span> <span class="n">y_test_mds</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">df1_mds_encoded</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+
+<span class="p">(</span><span class="n">X_train_pca</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">X_test_pca</span><span class="o">.</span><span class="n">shape</span><span class="p">),</span> <span class="p">(</span><span class="n">X_train_mds</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">X_test_mds</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(((316, 17), (79, 17)), ((316, 3), (79, 3)))
+</pre></div>
+</div>
+</div>
+</div>
+<p>El primer conjunto de datos tiene 395 filas y 17 columnas, lo que significa que contiene 395 muestras (instancias) y cada muestra tiene 17 características.</p>
+<p>Esta notación es comúnmente utilizada para describir la forma o dimensiones de los datos en el contexto de análisis de datos y aprendizaje automático. Las dimensiones de los datos son importantes porque te dicen cuántas muestras tienes y cuántas características (variables) están presentes en tus datos, lo que es esencial para realizar análisis y modelado de datos.</p>
+<p>MODELOS DE ENSAMBLE</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestRegressor</span>
+
+<span class="c1"># Crear y entrenar el modelo</span>
+<span class="n">rf</span> <span class="o">=</span> <span class="n">RandomForestRegressor</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+<span class="n">rf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_pca</span><span class="p">,</span> <span class="n">y_train_pca</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><style>#sk-container-id-1 {color: black;}#sk-container-id-1 pre{padding: 0;}#sk-container-id-1 div.sk-toggleable {background-color: white;}#sk-container-id-1 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-1 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-1 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-1 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-1 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-1 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-1 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-1 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-1 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-1 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-1 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-1 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-1 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-1 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-1 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-1 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-1 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-1 div.sk-item {position: relative;z-index: 1;}#sk-container-id-1 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-1 div.sk-item::before, #sk-container-id-1 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-1 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-1 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-1 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-1 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-1 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-1 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-1 div.sk-label-container {text-align: center;}#sk-container-id-1 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-1 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-1" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>RandomForestRegressor(random_state=42)</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-1" type="checkbox" checked><label for="sk-estimator-id-1" class="sk-toggleable__label sk-toggleable__label-arrow">RandomForestRegressor</label><div class="sk-toggleable__content"><pre>RandomForestRegressor(random_state=42)</pre></div></div></div></div></div></div></div>
+</div>
+<p>MODELOS LINEALES + BOOSTING</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LinearRegression</span>
+<span class="kn">import</span> <span class="nn">xgboost</span> <span class="k">as</span> <span class="nn">xgb</span>
+
+<span class="c1"># Entrenar el modelo de regresión lineal</span>
+<span class="n">lr</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">()</span>
+<span class="n">lr</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_pca</span><span class="p">,</span> <span class="n">y_train_pca</span><span class="p">)</span>
+
+<span class="c1"># Obtener las predicciones del modelo lineal y usarlas como nueva característica</span>
+<span class="n">X_train_pca_with_predictions</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">column_stack</span><span class="p">((</span><span class="n">X_train_pca</span><span class="p">,</span> <span class="n">lr</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_train_pca</span><span class="p">)))</span>
+
+<span class="c1"># Entrenar XGBoost con la nueva característica</span>
+<span class="n">xgbr</span> <span class="o">=</span> <span class="n">xgb</span><span class="o">.</span><span class="n">XGBRegressor</span><span class="p">(</span><span class="n">objective</span> <span class="o">=</span><span class="s1">&#39;reg:squarederror&#39;</span><span class="p">)</span>
+<span class="n">xgbr</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_pca_with_predictions</span><span class="p">,</span> <span class="n">y_train_pca</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><style>#sk-container-id-2 {color: black;}#sk-container-id-2 pre{padding: 0;}#sk-container-id-2 div.sk-toggleable {background-color: white;}#sk-container-id-2 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-2 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-2 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-2 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-2 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-2 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-2 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-2 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-2 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-2 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-2 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-2 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-2 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-2 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-2 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-2 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-2 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-2 div.sk-item {position: relative;z-index: 1;}#sk-container-id-2 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-2 div.sk-item::before, #sk-container-id-2 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-2 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-2 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-2 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-2 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-2 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-2 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-2 div.sk-label-container {text-align: center;}#sk-container-id-2 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-2 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-2" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>XGBRegressor(base_score=None, booster=None, callbacks=None,
+             colsample_bylevel=None, colsample_bynode=None,
+             colsample_bytree=None, device=None, early_stopping_rounds=None,
+             enable_categorical=False, eval_metric=None, feature_types=None,
+             gamma=None, grow_policy=None, importance_type=None,
+             interaction_constraints=None, learning_rate=None, max_bin=None,
+             max_cat_threshold=None, max_cat_to_onehot=None,
+             max_delta_step=None, max_depth=None, max_leaves=None,
+             min_child_weight=None, missing=nan, monotone_constraints=None,
+             multi_strategy=None, n_estimators=None, n_jobs=None,
+             num_parallel_tree=None, random_state=None, ...)</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-2" type="checkbox" checked><label for="sk-estimator-id-2" class="sk-toggleable__label sk-toggleable__label-arrow">XGBRegressor</label><div class="sk-toggleable__content"><pre>XGBRegressor(base_score=None, booster=None, callbacks=None,
+             colsample_bylevel=None, colsample_bynode=None,
+             colsample_bytree=None, device=None, early_stopping_rounds=None,
+             enable_categorical=False, eval_metric=None, feature_types=None,
+             gamma=None, grow_policy=None, importance_type=None,
+             interaction_constraints=None, learning_rate=None, max_bin=None,
+             max_cat_threshold=None, max_cat_to_onehot=None,
+             max_delta_step=None, max_depth=None, max_leaves=None,
+             min_child_weight=None, missing=nan, monotone_constraints=None,
+             multi_strategy=None, n_estimators=None, n_jobs=None,
+             num_parallel_tree=None, random_state=None, ...)</pre></div></div></div></div></div></div></div>
+</div>
+<p>MODELOS DE STACKING</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">StackingRegressor</span>
+
+<span class="c1"># Definir los modelos base y el meta-modelo</span>
+<span class="n">base_models</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">(</span><span class="s1">&#39;lr&#39;</span><span class="p">,</span> <span class="n">LinearRegression</span><span class="p">()),</span>
+    <span class="p">(</span><span class="s1">&#39;xgb&#39;</span><span class="p">,</span> <span class="n">xgb</span><span class="o">.</span><span class="n">XGBRegressor</span><span class="p">(</span><span class="n">objective</span> <span class="o">=</span><span class="s1">&#39;reg:squarederror&#39;</span><span class="p">))</span>
+<span class="p">]</span>
+<span class="n">stacked_model</span> <span class="o">=</span> <span class="n">StackingRegressor</span><span class="p">(</span><span class="n">estimators</span><span class="o">=</span><span class="n">base_models</span><span class="p">,</span> <span class="n">final_estimator</span><span class="o">=</span><span class="n">LinearRegression</span><span class="p">())</span>
+
+<span class="c1"># Entrenar el modelo de stacking</span>
+<span class="n">stacked_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_pca</span><span class="p">,</span> <span class="n">y_train_pca</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><style>#sk-container-id-3 {color: black;}#sk-container-id-3 pre{padding: 0;}#sk-container-id-3 div.sk-toggleable {background-color: white;}#sk-container-id-3 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-3 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-3 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-3 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-3 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-3 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-3 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-3 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-3 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-3 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-3 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-3 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-3 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-3 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-3 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-3 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-3 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-3 div.sk-item {position: relative;z-index: 1;}#sk-container-id-3 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-3 div.sk-item::before, #sk-container-id-3 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-3 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-3 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-3 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-3 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-3 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-3 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-3 div.sk-label-container {text-align: center;}#sk-container-id-3 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-3 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-3" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>StackingRegressor(estimators=[(&#x27;lr&#x27;, LinearRegression()),
+                              (&#x27;xgb&#x27;,
+                               XGBRegressor(base_score=None, booster=None,
+                                            callbacks=None,
+                                            colsample_bylevel=None,
+                                            colsample_bynode=None,
+                                            colsample_bytree=None, device=None,
+                                            early_stopping_rounds=None,
+                                            enable_categorical=False,
+                                            eval_metric=None,
+                                            feature_types=None, gamma=None,
+                                            grow_policy=None,
+                                            importance_type=None,
+                                            interaction_constraints=None,
+                                            learning_rate=None, max_bin=None,
+                                            max_cat_threshold=None,
+                                            max_cat_to_onehot=None,
+                                            max_delta_step=None, max_depth=None,
+                                            max_leaves=None,
+                                            min_child_weight=None, missing=nan,
+                                            monotone_constraints=None,
+                                            multi_strategy=None,
+                                            n_estimators=None, n_jobs=None,
+                                            num_parallel_tree=None,
+                                            random_state=None, ...))],
+                  final_estimator=LinearRegression())</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-3" type="checkbox" ><label for="sk-estimator-id-3" class="sk-toggleable__label sk-toggleable__label-arrow">StackingRegressor</label><div class="sk-toggleable__content"><pre>StackingRegressor(estimators=[(&#x27;lr&#x27;, LinearRegression()),
+                              (&#x27;xgb&#x27;,
+                               XGBRegressor(base_score=None, booster=None,
+                                            callbacks=None,
+                                            colsample_bylevel=None,
+                                            colsample_bynode=None,
+                                            colsample_bytree=None, device=None,
+                                            early_stopping_rounds=None,
+                                            enable_categorical=False,
+                                            eval_metric=None,
+                                            feature_types=None, gamma=None,
+                                            grow_policy=None,
+                                            importance_type=None,
+                                            interaction_constraints=None,
+                                            learning_rate=None, max_bin=None,
+                                            max_cat_threshold=None,
+                                            max_cat_to_onehot=None,
+                                            max_delta_step=None, max_depth=None,
+                                            max_leaves=None,
+                                            min_child_weight=None, missing=nan,
+                                            monotone_constraints=None,
+                                            multi_strategy=None,
+                                            n_estimators=None, n_jobs=None,
+                                            num_parallel_tree=None,
+                                            random_state=None, ...))],
+                  final_estimator=LinearRegression())</pre></div></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label sk-toggleable"><label>lr</label></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-4" type="checkbox" ><label for="sk-estimator-id-4" class="sk-toggleable__label sk-toggleable__label-arrow">LinearRegression</label><div class="sk-toggleable__content"><pre>LinearRegression()</pre></div></div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label sk-toggleable"><label>xgb</label></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-5" type="checkbox" ><label for="sk-estimator-id-5" class="sk-toggleable__label sk-toggleable__label-arrow">XGBRegressor</label><div class="sk-toggleable__content"><pre>XGBRegressor(base_score=None, booster=None, callbacks=None,
+             colsample_bylevel=None, colsample_bynode=None,
+             colsample_bytree=None, device=None, early_stopping_rounds=None,
+             enable_categorical=False, eval_metric=None, feature_types=None,
+             gamma=None, grow_policy=None, importance_type=None,
+             interaction_constraints=None, learning_rate=None, max_bin=None,
+             max_cat_threshold=None, max_cat_to_onehot=None,
+             max_delta_step=None, max_depth=None, max_leaves=None,
+             min_child_weight=None, missing=nan, monotone_constraints=None,
+             multi_strategy=None, n_estimators=None, n_jobs=None,
+             num_parallel_tree=None, random_state=None, ...)</pre></div></div></div></div></div></div></div></div><div class="sk-item"><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label sk-toggleable"><label>final_estimator</label></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-6" type="checkbox" ><label for="sk-estimator-id-6" class="sk-toggleable__label sk-toggleable__label-arrow">LinearRegression</label><div class="sk-toggleable__content"><pre>LinearRegression()</pre></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
+</div>
+<p>BAGGING REGRESSOR</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">BaggingRegressor</span>
+<span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">DecisionTreeRegressor</span>
+
+<span class="c1"># Definir y entrenar el modelo</span>
+<span class="n">bagging</span> <span class="o">=</span> <span class="n">BaggingRegressor</span><span class="p">(</span><span class="n">base_estimator</span><span class="o">=</span><span class="n">DecisionTreeRegressor</span><span class="p">(),</span> <span class="n">n_estimators</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+<span class="n">bagging</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_pca</span><span class="p">,</span> <span class="n">y_train_pca</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><style>#sk-container-id-4 {color: black;}#sk-container-id-4 pre{padding: 0;}#sk-container-id-4 div.sk-toggleable {background-color: white;}#sk-container-id-4 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-4 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-4 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-4 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-4 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-4 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-4 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-4 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-4 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-4 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-4 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-4 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-4 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-4 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-4 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-4 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-4 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-4 div.sk-item {position: relative;z-index: 1;}#sk-container-id-4 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-4 div.sk-item::before, #sk-container-id-4 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-4 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-4 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-4 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-4 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-4 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-4 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-4 div.sk-label-container {text-align: center;}#sk-container-id-4 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-4 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-4" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>BaggingRegressor(base_estimator=DecisionTreeRegressor(), n_estimators=100,
+                 random_state=42)</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-7" type="checkbox" ><label for="sk-estimator-id-7" class="sk-toggleable__label sk-toggleable__label-arrow">BaggingRegressor</label><div class="sk-toggleable__content"><pre>BaggingRegressor(base_estimator=DecisionTreeRegressor(), n_estimators=100,
+                 random_state=42)</pre></div></div></div><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-8" type="checkbox" ><label for="sk-estimator-id-8" class="sk-toggleable__label sk-toggleable__label-arrow">base_estimator: DecisionTreeRegressor</label><div class="sk-toggleable__content"><pre>DecisionTreeRegressor()</pre></div></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-9" type="checkbox" ><label for="sk-estimator-id-9" class="sk-toggleable__label sk-toggleable__label-arrow">DecisionTreeRegressor</label><div class="sk-toggleable__content"><pre>DecisionTreeRegressor()</pre></div></div></div></div></div></div></div></div></div></div></div></div>
+</div>
+<p>VOTING ENSAMBLE</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">VotingRegressor</span>
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LinearRegression</span>
+<span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="kn">import</span> <span class="n">SVR</span>
+
+<span class="c1"># Definir los modelos individuales</span>
+<span class="n">model1</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">()</span>
+<span class="n">model2</span> <span class="o">=</span> <span class="n">xgb</span><span class="o">.</span><span class="n">XGBRegressor</span><span class="p">(</span><span class="n">objective</span> <span class="o">=</span><span class="s1">&#39;reg:squarederror&#39;</span><span class="p">)</span>
+<span class="n">model3</span> <span class="o">=</span> <span class="n">SVR</span><span class="p">(</span><span class="n">kernel</span><span class="o">=</span><span class="s1">&#39;linear&#39;</span><span class="p">)</span>
+
+<span class="c1"># Crear y entrenar el VotingRegressor</span>
+<span class="n">voting</span> <span class="o">=</span> <span class="n">VotingRegressor</span><span class="p">(</span><span class="n">estimators</span><span class="o">=</span><span class="p">[(</span><span class="s1">&#39;lr&#39;</span><span class="p">,</span> <span class="n">model1</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;xgb&#39;</span><span class="p">,</span> <span class="n">model2</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;svr&#39;</span><span class="p">,</span> <span class="n">model3</span><span class="p">)])</span>
+<span class="n">voting</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_pca</span><span class="p">,</span> <span class="n">y_train_pca</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><style>#sk-container-id-5 {color: black;}#sk-container-id-5 pre{padding: 0;}#sk-container-id-5 div.sk-toggleable {background-color: white;}#sk-container-id-5 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-5 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-5 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-5 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-5 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-5 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-5 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-5 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-5 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-5 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-5 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-5 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-5 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-5 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-5 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-5 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-5 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-5 div.sk-item {position: relative;z-index: 1;}#sk-container-id-5 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-5 div.sk-item::before, #sk-container-id-5 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-5 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-5 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-5 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-5 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-5 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-5 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-5 div.sk-label-container {text-align: center;}#sk-container-id-5 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-5 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-5" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>VotingRegressor(estimators=[(&#x27;lr&#x27;, LinearRegression()),
+                            (&#x27;xgb&#x27;,
+                             XGBRegressor(base_score=None, booster=None,
+                                          callbacks=None,
+                                          colsample_bylevel=None,
+                                          colsample_bynode=None,
+                                          colsample_bytree=None, device=None,
+                                          early_stopping_rounds=None,
+                                          enable_categorical=False,
+                                          eval_metric=None, feature_types=None,
+                                          gamma=None, grow_policy=None,
+                                          importance_type=None,
+                                          interaction_constraints=None,
+                                          learning_rate=None, max_bin=None,
+                                          max_cat_threshold=None,
+                                          max_cat_to_onehot=None,
+                                          max_delta_step=None, max_depth=None,
+                                          max_leaves=None,
+                                          min_child_weight=None, missing=nan,
+                                          monotone_constraints=None,
+                                          multi_strategy=None,
+                                          n_estimators=None, n_jobs=None,
+                                          num_parallel_tree=None,
+                                          random_state=None, ...)),
+                            (&#x27;svr&#x27;, SVR(kernel=&#x27;linear&#x27;))])</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-10" type="checkbox" ><label for="sk-estimator-id-10" class="sk-toggleable__label sk-toggleable__label-arrow">VotingRegressor</label><div class="sk-toggleable__content"><pre>VotingRegressor(estimators=[(&#x27;lr&#x27;, LinearRegression()),
+                            (&#x27;xgb&#x27;,
+                             XGBRegressor(base_score=None, booster=None,
+                                          callbacks=None,
+                                          colsample_bylevel=None,
+                                          colsample_bynode=None,
+                                          colsample_bytree=None, device=None,
+                                          early_stopping_rounds=None,
+                                          enable_categorical=False,
+                                          eval_metric=None, feature_types=None,
+                                          gamma=None, grow_policy=None,
+                                          importance_type=None,
+                                          interaction_constraints=None,
+                                          learning_rate=None, max_bin=None,
+                                          max_cat_threshold=None,
+                                          max_cat_to_onehot=None,
+                                          max_delta_step=None, max_depth=None,
+                                          max_leaves=None,
+                                          min_child_weight=None, missing=nan,
+                                          monotone_constraints=None,
+                                          multi_strategy=None,
+                                          n_estimators=None, n_jobs=None,
+                                          num_parallel_tree=None,
+                                          random_state=None, ...)),
+                            (&#x27;svr&#x27;, SVR(kernel=&#x27;linear&#x27;))])</pre></div></div></div><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label sk-toggleable"><label>lr</label></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-11" type="checkbox" ><label for="sk-estimator-id-11" class="sk-toggleable__label sk-toggleable__label-arrow">LinearRegression</label><div class="sk-toggleable__content"><pre>LinearRegression()</pre></div></div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label sk-toggleable"><label>xgb</label></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-12" type="checkbox" ><label for="sk-estimator-id-12" class="sk-toggleable__label sk-toggleable__label-arrow">XGBRegressor</label><div class="sk-toggleable__content"><pre>XGBRegressor(base_score=None, booster=None, callbacks=None,
+             colsample_bylevel=None, colsample_bynode=None,
+             colsample_bytree=None, device=None, early_stopping_rounds=None,
+             enable_categorical=False, eval_metric=None, feature_types=None,
+             gamma=None, grow_policy=None, importance_type=None,
+             interaction_constraints=None, learning_rate=None, max_bin=None,
+             max_cat_threshold=None, max_cat_to_onehot=None,
+             max_delta_step=None, max_depth=None, max_leaves=None,
+             min_child_weight=None, missing=nan, monotone_constraints=None,
+             multi_strategy=None, n_estimators=None, n_jobs=None,
+             num_parallel_tree=None, random_state=None, ...)</pre></div></div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label sk-toggleable"><label>svr</label></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-13" type="checkbox" ><label for="sk-estimator-id-13" class="sk-toggleable__label sk-toggleable__label-arrow">SVR</label><div class="sk-toggleable__content"><pre>SVR(kernel=&#x27;linear&#x27;)</pre></div></div></div></div></div></div></div></div></div></div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">Lasso</span><span class="p">,</span> <span class="n">Ridge</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>MÉTRICAS</p>
+<p>Las métricas son medidas cuantitativas que se utilizan para evaluar el rendimiento o la calidad de un modelo de machine learning en función de su capacidad para hacer predicciones precisas en un conjunto de datos. Estas métricas proporcionan información sobre cómo se desempeña el modelo y pueden variar según el tipo de problema de machine learning que se esté abordando (clasificación, regresión, agrupamiento, etc.)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Definir los modelos</span>
+<span class="n">models</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;Lasso Regression&#39;</span><span class="p">:</span> <span class="n">Lasso</span><span class="p">(),</span>
+    <span class="s1">&#39;Ridge Regression&#39;</span><span class="p">:</span> <span class="n">Ridge</span><span class="p">(),</span>
+    <span class="s1">&#39;Random Forest&#39;</span><span class="p">:</span> <span class="n">RandomForestRegressor</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">),</span>
+    <span class="s1">&#39;LR + XGBoost&#39;</span><span class="p">:</span> <span class="n">StackingRegressor</span><span class="p">(</span><span class="n">estimators</span><span class="o">=</span><span class="p">[(</span><span class="s1">&#39;lr&#39;</span><span class="p">,</span> <span class="n">LinearRegression</span><span class="p">()),</span> <span class="p">(</span><span class="s1">&#39;xgb&#39;</span><span class="p">,</span> <span class="n">xgb</span><span class="o">.</span><span class="n">XGBRegressor</span><span class="p">(</span><span class="n">objective</span> <span class="o">=</span><span class="s1">&#39;reg:squarederror&#39;</span><span class="p">))],</span> <span class="n">final_estimator</span><span class="o">=</span><span class="n">LinearRegression</span><span class="p">()),</span>
+    <span class="s1">&#39;Bagging&#39;</span><span class="p">:</span> <span class="n">BaggingRegressor</span><span class="p">(</span><span class="n">base_estimator</span><span class="o">=</span><span class="n">DecisionTreeRegressor</span><span class="p">(),</span> <span class="n">n_estimators</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">),</span>
+    <span class="s1">&#39;Voting&#39;</span><span class="p">:</span> <span class="n">VotingRegressor</span><span class="p">(</span><span class="n">estimators</span><span class="o">=</span><span class="p">[(</span><span class="s1">&#39;lr&#39;</span><span class="p">,</span> <span class="n">LinearRegression</span><span class="p">()),</span> <span class="p">(</span><span class="s1">&#39;xgb&#39;</span><span class="p">,</span> <span class="n">xgb</span><span class="o">.</span><span class="n">XGBRegressor</span><span class="p">(</span><span class="n">objective</span> <span class="o">=</span><span class="s1">&#39;reg:squarederror&#39;</span><span class="p">)),</span> <span class="p">(</span><span class="s1">&#39;svr&#39;</span><span class="p">,</span> <span class="n">SVR</span><span class="p">(</span><span class="n">kernel</span><span class="o">=</span><span class="s1">&#39;linear&#39;</span><span class="p">))]),</span>
+    <span class="s1">&#39;XGBoost&#39;</span><span class="p">:</span> <span class="n">xgb</span><span class="o">.</span><span class="n">XGBRegressor</span><span class="p">(</span><span class="n">objective</span> <span class="o">=</span><span class="s1">&#39;reg:squarederror&#39;</span><span class="p">,</span> <span class="n">n_estimators</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">mean_squared_error</span><span class="p">,</span> <span class="n">mean_absolute_error</span><span class="p">,</span> <span class="n">r2_score</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="k">def</span> <span class="nf">evaluate_regression_model</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">):</span>
+    <span class="c1"># Hacer predicciones</span>
+    <span class="n">y_train_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span>
+    <span class="n">y_test_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+
+    <span class="c1"># Calcular métricas</span>
+    <span class="n">train_mse</span> <span class="o">=</span> <span class="n">mean_squared_error</span><span class="p">(</span><span class="n">y_train</span><span class="p">,</span> <span class="n">y_train_pred</span><span class="p">)</span>
+    <span class="n">test_mse</span> <span class="o">=</span> <span class="n">mean_squared_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_test_pred</span><span class="p">)</span>
+
+    <span class="n">train_rmse</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">train_mse</span><span class="p">)</span>
+    <span class="n">test_rmse</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">test_mse</span><span class="p">)</span>
+
+    <span class="n">train_mae</span> <span class="o">=</span> <span class="n">mean_absolute_error</span><span class="p">(</span><span class="n">y_train</span><span class="p">,</span> <span class="n">y_train_pred</span><span class="p">)</span>
+    <span class="n">test_mae</span> <span class="o">=</span> <span class="n">mean_absolute_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_test_pred</span><span class="p">)</span>
+
+    <span class="n">train_r2</span> <span class="o">=</span> <span class="n">r2_score</span><span class="p">(</span><span class="n">y_train</span><span class="p">,</span> <span class="n">y_train_pred</span><span class="p">)</span>
+    <span class="n">test_r2</span> <span class="o">=</span> <span class="n">r2_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_test_pred</span><span class="p">)</span>
+
+    <span class="n">metrics</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s1">&#39;Test MSE&#39;</span><span class="p">:</span> <span class="n">test_mse</span><span class="p">,</span>
+        <span class="s1">&#39;Test RMSE&#39;</span><span class="p">:</span> <span class="n">test_rmse</span><span class="p">,</span>
+        <span class="s1">&#39;Test MAE&#39;</span><span class="p">:</span> <span class="n">test_mae</span><span class="p">,</span>
+        <span class="s1">&#39;Test R^2&#39;</span><span class="p">:</span> <span class="n">test_r2</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="n">metrics</span>
+
+<span class="c1"># Luego, para cada modelo:</span>
+<span class="n">metrics_data</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">model</span> <span class="ow">in</span> <span class="n">models</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_pca</span><span class="p">,</span> <span class="n">y_train_pca</span><span class="p">)</span>  <span class="c1"># Asegurarse de que el modelo esté entrenado</span>
+    <span class="n">metrics_data</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">evaluate_regression_model</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">X_train_pca</span><span class="p">,</span> <span class="n">y_train_pca</span><span class="p">,</span> <span class="n">X_test_pca</span><span class="p">,</span> <span class="n">y_test_pca</span><span class="p">)</span>
+
+<span class="c1"># Convertir a DataFrame</span>
+<span class="n">metrics_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">metrics_data</span><span class="p">)</span><span class="o">.</span><span class="n">T</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">metrics_df</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Test MSE</th>
+      <th>Test RMSE</th>
+      <th>Test MAE</th>
+      <th>Test R^2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Lasso Regression</th>
+      <td>12.245160</td>
+      <td>3.499309</td>
+      <td>2.793225</td>
+      <td>0.402822</td>
+    </tr>
+    <tr>
+      <th>Ridge Regression</th>
+      <td>8.181932</td>
+      <td>2.860408</td>
+      <td>2.253095</td>
+      <td>0.600980</td>
+    </tr>
+    <tr>
+      <th>Random Forest</th>
+      <td>10.139343</td>
+      <td>3.184234</td>
+      <td>2.433291</td>
+      <td>0.505520</td>
+    </tr>
+    <tr>
+      <th>LR + XGBoost</th>
+      <td>7.821984</td>
+      <td>2.796781</td>
+      <td>2.125477</td>
+      <td>0.618534</td>
+    </tr>
+    <tr>
+      <th>Bagging</th>
+      <td>10.037454</td>
+      <td>3.168194</td>
+      <td>2.427722</td>
+      <td>0.510489</td>
+    </tr>
+    <tr>
+      <th>Voting</th>
+      <td>7.929648</td>
+      <td>2.815963</td>
+      <td>2.159941</td>
+      <td>0.613283</td>
+    </tr>
+    <tr>
+      <th>XGBoost</th>
+      <td>10.061661</td>
+      <td>3.172012</td>
+      <td>2.362322</td>
+      <td>0.509308</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>Cada fila en la tabla representa un modelo diferente, y las métricas se utilizan para evaluar el rendimiento de ese modelo en un conjunto de prueba. Se hace comparacion de estas métricas entre modelos para determinar cuál de ellos se desempeña mejor en términos de la métrica específica  (por ejemplo, menor MSE o mayor R^2).</p>
+<p>El modelo de mejor rendimiento es el modelo “LR + XGBoost” tiene las siguientes métricas de evaluación en el conjunto de prueba:</p>
+<p>Test MSE (Mean Squared Error): 7.821984
+Test RMSE (Root Mean Squared Error): 2.796781
+Test MAE (Mean Absolute Error): 2.125477
+Test R^2 (Coeficiente de determinación): 0.618534
+Estas métricas indican el rendimiento del modelo en la tarea específica para la que fue entrenado y evaluado. Aquí hay una breve interpretación de estas métricas:</p>
+<p>El MSE de 7.821984 sugiere que, en promedio, las predicciones del modelo tienen un error cuadrático medio de aproximadamente 7.82 unidades cuadradas en relación con los valores reales.</p>
+<p>El RMSE de 2.796781 es la raíz cuadrada del MSE y proporciona una medida de la magnitud promedio de los errores en la misma unidad que la variable objetivo. Un RMSE más bajo es mejor.</p>
+<p>El MAE de 2.125477 es el error absoluto medio y representa el valor absoluto promedio de los errores entre las predicciones y los valores reales. Cuanto menor sea el MAE, mejor será el rendimiento del modelo.</p>
+<p>El R^2 de 0.618534 es una medida de cuánta variación en la variable objetivo es explicada por el modelo. Un R^2 más alto indica que el modelo explica una mayor proporción de la variación en los datos.</p>
+<p>Asi, el modelo “LR + XGBoost” parece tener un buen rendimiento en términos de estas métricas de evaluación. El bajo MSE, RMSE y MAE, junto con el R^2 relativamente alto, sugieren que el modelo es capaz de hacer predicciones precisas en el conjunto de prueba.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Luego, para cada modelo:</span>
+<span class="n">metrics_data</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">model</span> <span class="ow">in</span> <span class="n">models</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_mds</span><span class="p">,</span> <span class="n">y_train_mds</span><span class="p">)</span>  <span class="c1"># Asegurarse de que el modelo esté entrenado</span>
+    <span class="n">metrics_data</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">evaluate_regression_model</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">X_train_mds</span><span class="p">,</span> <span class="n">y_train_mds</span><span class="p">,</span> <span class="n">X_test_mds</span><span class="p">,</span> <span class="n">y_test_mds</span><span class="p">)</span>
+
+<span class="c1"># Convertir a DataFrame</span>
+<span class="n">metrics_df_mds</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">metrics_data</span><span class="p">)</span><span class="o">.</span><span class="n">T</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">metrics_df_mds</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Test MSE</th>
+      <th>Test RMSE</th>
+      <th>Test MAE</th>
+      <th>Test R^2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Lasso Regression</th>
+      <td>17.801416</td>
+      <td>4.219172</td>
+      <td>3.459335</td>
+      <td>0.131852</td>
+    </tr>
+    <tr>
+      <th>Ridge Regression</th>
+      <td>17.919273</td>
+      <td>4.233116</td>
+      <td>3.439320</td>
+      <td>0.126104</td>
+    </tr>
+    <tr>
+      <th>Random Forest</th>
+      <td>21.052832</td>
+      <td>4.588336</td>
+      <td>3.656835</td>
+      <td>-0.026715</td>
+    </tr>
+    <tr>
+      <th>LR + XGBoost</th>
+      <td>19.389640</td>
+      <td>4.403367</td>
+      <td>3.569389</td>
+      <td>0.054397</td>
+    </tr>
+    <tr>
+      <th>Bagging</th>
+      <td>21.376982</td>
+      <td>4.623525</td>
+      <td>3.663797</td>
+      <td>-0.042523</td>
+    </tr>
+    <tr>
+      <th>Voting</th>
+      <td>19.103637</td>
+      <td>4.370771</td>
+      <td>3.502806</td>
+      <td>0.068345</td>
+    </tr>
+    <tr>
+      <th>XGBoost</th>
+      <td>26.914561</td>
+      <td>5.187925</td>
+      <td>4.149692</td>
+      <td>-0.312582</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>En general, un menor MSE, RMSE y MAE, junto con un R^2 más cercano a 1, indican un mejor rendimiento del modelo. Basándonos en estas métricas, los modelos “Lasso Regression” y “Ridge Regression” tienen un rendimiento similar en términos de MSE, RMSE y MAE, y tienen valores de R^2 positivos. “Voting” y “LR + XGBoost” también tienen valores de R^2 positivos y un buen rendimiento en términos de MAE y RMSE. “Random Forest”, “Bagging” y “XGBoost” tienen valores de R^2 negativos, lo que sugiere que estos modelos no están ajustando bien los datos en comparación con los otros modelos.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Gráfico de barras para visualizar métricas</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
+
+<span class="c1"># Subplots para cada métrica</span>
+<span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">metric</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">metrics_df</span><span class="o">.</span><span class="n">columns</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">idx</span><span class="p">)</span>
+    <span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">metrics_df</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">metric</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">metrics_df</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="n">metric</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Gráficos de dispersión (dot plots) para visualizar métricas</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
+
+<span class="c1"># Subplots para cada métrica</span>
+<span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">metric</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">metrics_df</span><span class="o">.</span><span class="n">columns</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">idx</span><span class="p">)</span>
+    <span class="n">sns</span><span class="o">.</span><span class="n">stripplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">metric</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">metrics_df</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">metrics_df</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">orient</span><span class="o">=</span><span class="s1">&#39;h&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="n">metric</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/be5c29c56522e5c63dadd80fad77b4753377fe8d377243e0e99236a7651dbe0a.png" src="_images/be5c29c56522e5c63dadd80fad77b4753377fe8d377243e0e99236a7651dbe0a.png" />
+<img alt="_images/3dae3452e193e076113a148891e02a5d74279c4e3621e8ac2be9d10f6b311635.png" src="_images/3dae3452e193e076113a148891e02a5d74279c4e3621e8ac2be9d10f6b311635.png" />
+</div>
+</div>
+<p>En los gráficos de barras, cada barra representa el valor de una métrica de evaluación (por ejemplo, Test MSE, Test RMSE, Test MAE, Test R^2) para un modelo específico.</p>
+<p>se puede comparar visualmente la altura de las barras para cada métrica. Cuanto más baja sea la barra, mejor es el rendimiento del modelo en esa métrica.</p>
+<p>Asi, podemos deducir que para MSE hay tres modelos que se igualan:LR + XGBoost, voting y lasso regression al igual que para RMSE Y MAE.</p>
+<p>Pero para un mayor r cuadrado solo dos modelos se igualan;LR + XGBoost y voting.</p>
+<p>OPTIMIZADOS</p>
+<p>los modelos optimizados son aquellos que se han ajustado cuidadosamente para obtener el mejor rendimiento en términos de las métricas de evaluación específicas de un problema de aprendizaje automático. La optimización de modelos es una parte crucial del proceso de desarrollo de modelos de machine learning para garantizar que puedan realizar predicciones precisas en datos nuevos y no vistos.</p>
+<p>GRID SEARCH</p>
+<p>rigde</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">Ridge</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">GridSearchCV</span>
+
+<span class="n">ridge</span> <span class="o">=</span> <span class="n">Ridge</span><span class="p">()</span>
+<span class="n">ridge_param_grid</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;alpha&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.001</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">1000</span><span class="p">],</span>
+    <span class="s1">&#39;fit_intercept&#39;</span><span class="p">:</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">],</span>
+ <span class="c1">#   &#39;normalize&#39;: [True, False],</span>
+    <span class="s1">&#39;solver&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span> <span class="s1">&#39;svd&#39;</span><span class="p">,</span> <span class="s1">&#39;cholesky&#39;</span><span class="p">,</span> <span class="s1">&#39;lsqr&#39;</span><span class="p">,</span> <span class="s1">&#39;sparse_cg&#39;</span><span class="p">,</span> <span class="s1">&#39;sag&#39;</span><span class="p">,</span> <span class="s1">&#39;saga&#39;</span><span class="p">]</span>
+<span class="p">}</span>
+
+<span class="n">ridge_grid_search</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">ridge</span><span class="p">,</span> <span class="n">ridge_param_grid</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s1">&#39;neg_mean_squared_error&#39;</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">ridge_grid_search</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_pca</span><span class="p">,</span> <span class="n">y_train_pca</span><span class="p">)</span>
+<span class="n">ridge_grid_best_params</span> <span class="o">=</span> <span class="n">ridge_grid_search</span><span class="o">.</span><span class="n">best_params_</span>
+<span class="n">ridge_grid_best_score</span> <span class="o">=</span> <span class="n">ridge_grid_search</span><span class="o">.</span><span class="n">best_score_</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>lasso</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">Lasso</span>
+
+<span class="n">lasso</span> <span class="o">=</span> <span class="n">Lasso</span><span class="p">()</span>
+<span class="n">lasso_param_grid</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;alpha&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.001</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">1000</span><span class="p">],</span>
+    <span class="s1">&#39;fit_intercept&#39;</span><span class="p">:</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">],</span>
+ <span class="c1">#   &#39;normalize&#39;: [True, False],</span>
+    <span class="s1">&#39;precompute&#39;</span><span class="p">:</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">],</span>
+    <span class="s1">&#39;warm_start&#39;</span><span class="p">:</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">],</span>
+    <span class="s1">&#39;positive&#39;</span><span class="p">:</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">]</span>
+<span class="p">}</span>
+
+<span class="n">lasso_grid_search</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">lasso</span><span class="p">,</span> <span class="n">lasso_param_grid</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s1">&#39;neg_mean_squared_error&#39;</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">lasso_grid_search</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_pca</span><span class="p">,</span> <span class="n">y_train_pca</span><span class="p">)</span>
+<span class="n">lasso_grid_best_params</span> <span class="o">=</span> <span class="n">lasso_grid_search</span><span class="o">.</span><span class="n">best_params_</span>
+<span class="n">lasso_grid_best_score</span> <span class="o">=</span> <span class="n">lasso_grid_search</span><span class="o">.</span><span class="n">best_score_</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Random Forest Regressor</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestRegressor</span>
+
+<span class="n">random_forest</span> <span class="o">=</span> <span class="n">RandomForestRegressor</span><span class="p">()</span>
+<span class="n">rf_param_grid</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;n_estimators&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">200</span><span class="p">],</span>
+    <span class="s1">&#39;max_depth&#39;</span><span class="p">:</span> <span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">],</span>
+    <span class="s1">&#39;min_samples_split&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span>
+    <span class="s1">&#39;min_samples_leaf&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>
+    <span class="s1">&#39;bootstrap&#39;</span><span class="p">:</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">]</span>
+<span class="p">}</span>
+
+<span class="n">rf_grid_search</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">random_forest</span><span class="p">,</span> <span class="n">rf_param_grid</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s1">&#39;neg_mean_squared_error&#39;</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">rf_grid_search</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_pca</span><span class="p">,</span> <span class="n">y_train_pca</span><span class="p">)</span>
+<span class="n">rf_grid_best_params</span> <span class="o">=</span> <span class="n">rf_grid_search</span><span class="o">.</span><span class="n">best_params_</span>
+<span class="n">rf_grid_best_score</span> <span class="o">=</span> <span class="n">rf_grid_search</span><span class="o">.</span><span class="n">best_score_</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Bagging Regressor</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">BaggingRegressor</span>
+
+<span class="n">bagging</span> <span class="o">=</span> <span class="n">BaggingRegressor</span><span class="p">()</span>
+<span class="n">bagging_param_grid</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;n_estimators&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">200</span><span class="p">],</span>
+    <span class="s1">&#39;max_samples&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">],</span>
+    <span class="s1">&#39;max_features&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">],</span>
+    <span class="s1">&#39;bootstrap&#39;</span><span class="p">:</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">],</span>
+    <span class="s1">&#39;bootstrap_features&#39;</span><span class="p">:</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">]</span>
+<span class="p">}</span>
+
+<span class="n">bagging_grid_search</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">bagging</span><span class="p">,</span> <span class="n">bagging_param_grid</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s1">&#39;neg_mean_squared_error&#39;</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">bagging_grid_search</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_pca</span><span class="p">,</span> <span class="n">y_train_pca</span><span class="p">)</span>
+<span class="n">bagging_grid_best_params</span> <span class="o">=</span> <span class="n">bagging_grid_search</span><span class="o">.</span><span class="n">best_params_</span>
+<span class="n">bagging_grid_best_score</span> <span class="o">=</span> <span class="n">bagging_grid_search</span><span class="o">.</span><span class="n">best_score_</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>XGBoost</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">xgboost</span> <span class="k">as</span> <span class="nn">xgb</span>
+
+<span class="n">xgboost</span> <span class="o">=</span> <span class="n">xgb</span><span class="o">.</span><span class="n">XGBRegressor</span><span class="p">(</span><span class="n">objective</span> <span class="o">=</span><span class="s1">&#39;reg:squarederror&#39;</span><span class="p">)</span>
+<span class="n">xgboost_param_grid</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;n_estimators&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">50</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">150</span><span class="p">],</span>
+    <span class="s1">&#39;max_depth&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span>
+    <span class="s1">&#39;learning_rate&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.01</span><span class="p">,</span> <span class="mf">0.05</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">],</span>
+    <span class="s1">&#39;gamma&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">],</span>
+    <span class="s1">&#39;subsample&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.8</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="s1">&#39;colsample_bytree&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.8</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<span class="p">}</span>
+
+<span class="n">xgboost_grid_search</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">xgboost</span><span class="p">,</span> <span class="n">xgboost_param_grid</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s1">&#39;neg_mean_squared_error&#39;</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">xgboost_grid_search</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_pca</span><span class="p">,</span> <span class="n">y_train_pca</span><span class="p">)</span>
+<span class="n">xgboost_grid_best_params</span> <span class="o">=</span> <span class="n">xgboost_grid_search</span><span class="o">.</span><span class="n">best_params_</span>
+<span class="n">xgboost_grid_best_score</span> <span class="o">=</span> <span class="n">xgboost_grid_search</span><span class="o">.</span><span class="n">best_score_</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>LR + XGBOOST</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%time</span>
+<span class="c1"># Definir el Stacking Regressor con estimadores base</span>
+<span class="n">stacking_regressor</span> <span class="o">=</span> <span class="n">StackingRegressor</span><span class="p">(</span><span class="n">estimators</span><span class="o">=</span><span class="p">[(</span><span class="s1">&#39;lr&#39;</span><span class="p">,</span> <span class="n">LinearRegression</span><span class="p">()),</span> <span class="p">(</span><span class="s1">&#39;xgb&#39;</span><span class="p">,</span> <span class="n">xgb</span><span class="o">.</span><span class="n">XGBRegressor</span><span class="p">(</span><span class="n">objective</span> <span class="o">=</span><span class="s1">&#39;reg:squarederror&#39;</span><span class="p">))])</span>
+
+<span class="c1"># Definir el espacio de parámetros</span>
+<span class="n">stacking_param_grid</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;xgb__n_estimators&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">50</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">150</span><span class="p">],</span>
+    <span class="s1">&#39;xgb__max_depth&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span>
+    <span class="s1">&#39;xgb__learning_rate&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.01</span><span class="p">,</span> <span class="mf">0.05</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">],</span>
+    <span class="s1">&#39;xgb__gamma&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">],</span>
+    <span class="s1">&#39;xgb__subsample&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.8</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="s1">&#39;xgb__colsample_bytree&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.8</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="s1">&#39;lr__fit_intercept&#39;</span><span class="p">:</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">],</span>
+   <span class="c1"># &#39;lr__normalize&#39;: [True, False]</span>
+<span class="p">}</span>
+
+<span class="n">stacking_grid_search</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">stacking_regressor</span><span class="p">,</span> <span class="n">stacking_param_grid</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s1">&#39;neg_mean_squared_error&#39;</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">stacking_grid_search</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_pca</span><span class="p">,</span> <span class="n">y_train_pca</span><span class="p">)</span>
+<span class="n">stacking_grid_best_params</span> <span class="o">=</span> <span class="n">stacking_grid_search</span><span class="o">.</span><span class="n">best_params_</span>
+<span class="n">stacking_grid_best_score</span> <span class="o">=</span> <span class="n">stacking_grid_search</span><span class="o">.</span><span class="n">best_score_</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: total: 1min 44s
+Wall time: 2h 18min 57s
+</pre></div>
+</div>
+</div>
+</div>
+<p>RANDOM SEARCH</p>
+<p>La búsqueda aleatoria (Random Search) es una técnica utilizada en el ajuste de hiperparámetros de modelos de machine learning. Se utiliza para encontrar la combinación óptima de hiperparámetros al explorar de manera aleatoria un espacio de búsqueda de hiperparámetros predefinidos. A diferencia de la búsqueda de cuadrícula (Grid Search), que explora todas las combinaciones posibles de hiperparámetros, la búsqueda aleatoria selecciona conjuntos de hiperparámetros de forma aleatoria para su evaluación.</p>
+<p>ridge</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">RandomizedSearchCV</span>
+
+<span class="n">ridge_random_search</span> <span class="o">=</span> <span class="n">RandomizedSearchCV</span><span class="p">(</span><span class="n">ridge</span><span class="p">,</span>
+                                         <span class="n">ridge_param_grid</span><span class="p">,</span> <span class="n">n_iter</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span>
+                                         <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s1">&#39;neg_mean_squared_error&#39;</span><span class="p">,</span>
+                                         <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+<span class="n">ridge_random_search</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_pca</span><span class="p">,</span> <span class="n">y_train_pca</span><span class="p">)</span>
+<span class="n">ridge_random_best_params</span> <span class="o">=</span> <span class="n">ridge_random_search</span><span class="o">.</span><span class="n">best_params_</span>
+<span class="n">ridge_random_best_score</span> <span class="o">=</span> <span class="n">ridge_random_search</span><span class="o">.</span><span class="n">best_score_</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>lasso</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lasso_random_search</span> <span class="o">=</span> <span class="n">RandomizedSearchCV</span><span class="p">(</span><span class="n">lasso</span><span class="p">,</span> <span class="n">lasso_param_grid</span><span class="p">,</span> <span class="n">n_iter</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s1">&#39;neg_mean_squared_error&#39;</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+<span class="n">lasso_random_search</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_pca</span><span class="p">,</span> <span class="n">y_train_pca</span><span class="p">)</span>
+<span class="n">lasso_random_best_params</span> <span class="o">=</span> <span class="n">lasso_random_search</span><span class="o">.</span><span class="n">best_params_</span>
+<span class="n">lasso_random_best_score</span> <span class="o">=</span> <span class="n">lasso_random_search</span><span class="o">.</span><span class="n">best_score_</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Random Forest Regressor</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">rf_random_search</span> <span class="o">=</span> <span class="n">RandomizedSearchCV</span><span class="p">(</span><span class="n">random_forest</span><span class="p">,</span> <span class="n">rf_param_grid</span><span class="p">,</span> <span class="n">n_iter</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s1">&#39;neg_mean_squared_error&#39;</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+<span class="n">rf_random_search</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_pca</span><span class="p">,</span> <span class="n">y_train_pca</span><span class="p">)</span>
+<span class="n">rf_random_best_params</span> <span class="o">=</span> <span class="n">rf_random_search</span><span class="o">.</span><span class="n">best_params_</span>
+<span class="n">rf_random_best_score</span> <span class="o">=</span> <span class="n">rf_random_search</span><span class="o">.</span><span class="n">best_score_</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Bagging Regressor</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">bagging_random_search</span> <span class="o">=</span> <span class="n">RandomizedSearchCV</span><span class="p">(</span><span class="n">bagging</span><span class="p">,</span> <span class="n">bagging_param_grid</span><span class="p">,</span> <span class="n">n_iter</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s1">&#39;neg_mean_squared_error&#39;</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+<span class="n">bagging_random_search</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_pca</span><span class="p">,</span> <span class="n">y_train_pca</span><span class="p">)</span>
+<span class="n">bagging_random_best_params</span> <span class="o">=</span> <span class="n">bagging_random_search</span><span class="o">.</span><span class="n">best_params_</span>
+<span class="n">bagging_random_best_score</span> <span class="o">=</span> <span class="n">bagging_random_search</span><span class="o">.</span><span class="n">best_score_</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>XGBoost</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">xgboost_random_search</span> <span class="o">=</span> <span class="n">RandomizedSearchCV</span><span class="p">(</span><span class="n">xgboost</span><span class="p">,</span> <span class="n">xgboost_param_grid</span><span class="p">,</span> <span class="n">n_iter</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s1">&#39;neg_mean_squared_error&#39;</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+<span class="n">xgboost_random_search</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_pca</span><span class="p">,</span> <span class="n">y_train_pca</span><span class="p">)</span>
+<span class="n">xgboost_random_best_params</span> <span class="o">=</span> <span class="n">xgboost_random_search</span><span class="o">.</span><span class="n">best_params_</span>
+<span class="n">xgboost_random_best_score</span> <span class="o">=</span> <span class="n">xgboost_random_search</span><span class="o">.</span><span class="n">best_score_</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>LR + XGBOOST</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">stacking_random_search</span> <span class="o">=</span> <span class="n">RandomizedSearchCV</span><span class="p">(</span><span class="n">stacking_regressor</span><span class="p">,</span> <span class="n">stacking_param_grid</span><span class="p">,</span> <span class="n">n_iter</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s1">&#39;neg_mean_squared_error&#39;</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+<span class="n">stacking_random_search</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_pca</span><span class="p">,</span> <span class="n">y_train_pca</span><span class="p">)</span>
+<span class="n">stacking_random_best_params</span> <span class="o">=</span> <span class="n">stacking_random_search</span><span class="o">.</span><span class="n">best_params_</span>
+<span class="n">stacking_random_best_score</span> <span class="o">=</span> <span class="n">stacking_random_search</span><span class="o">.</span><span class="n">best_score_</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>MÉTRICAS</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">evaluate_test_metrics</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Evalúa un modelo de regresión y devuelve las métricas de test.&quot;&quot;&quot;</span>
+    <span class="n">y_test_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+
+    <span class="n">metrics</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s1">&#39;Test MSE&#39;</span><span class="p">:</span> <span class="n">mean_squared_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_test_pred</span><span class="p">),</span>
+        <span class="s1">&#39;Test RMSE&#39;</span><span class="p">:</span> <span class="n">mean_squared_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_test_pred</span><span class="p">,</span> <span class="n">squared</span><span class="o">=</span><span class="kc">False</span><span class="p">),</span>
+        <span class="s1">&#39;Test MAE&#39;</span><span class="p">:</span> <span class="n">mean_absolute_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_test_pred</span><span class="p">),</span>
+        <span class="s1">&#39;Test R^2&#39;</span><span class="p">:</span> <span class="n">r2_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_test_pred</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="n">metrics</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Evaluar modelos ajustados con Grid Search</span>
+<span class="n">metrics_data_grid</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;Grid Lasso Regression&#39;</span><span class="p">:</span> <span class="n">evaluate_test_metrics</span><span class="p">(</span><span class="n">lasso_grid_search</span><span class="p">,</span> <span class="n">X_test_pca</span><span class="p">,</span> <span class="n">y_test_pca</span><span class="p">),</span>
+    <span class="s1">&#39;Grid Ridge Regression&#39;</span><span class="p">:</span> <span class="n">evaluate_test_metrics</span><span class="p">(</span><span class="n">ridge_grid_search</span><span class="p">,</span> <span class="n">X_test_pca</span><span class="p">,</span> <span class="n">y_test_pca</span><span class="p">),</span>
+    <span class="s1">&#39;Grid Random Forest&#39;</span><span class="p">:</span> <span class="n">evaluate_test_metrics</span><span class="p">(</span><span class="n">rf_grid_search</span><span class="p">,</span> <span class="n">X_test_pca</span><span class="p">,</span> <span class="n">y_test_pca</span><span class="p">),</span>
+    <span class="s1">&#39;Grid Bagging Ensamble&#39;</span><span class="p">:</span> <span class="n">evaluate_test_metrics</span><span class="p">(</span><span class="n">bagging_grid_search</span><span class="p">,</span> <span class="n">X_test_pca</span><span class="p">,</span> <span class="n">y_test_pca</span><span class="p">),</span>
+    <span class="s1">&#39;Grid XGBoost&#39;</span><span class="p">:</span> <span class="n">evaluate_test_metrics</span><span class="p">(</span><span class="n">xgboost_grid_search</span><span class="p">,</span> <span class="n">X_test_pca</span><span class="p">,</span> <span class="n">y_test_pca</span><span class="p">),</span>
+    <span class="s1">&#39;Grid Stacking Ensamble&#39;</span><span class="p">:</span> <span class="n">evaluate_test_metrics</span><span class="p">(</span><span class="n">stacking_grid_search</span><span class="p">,</span> <span class="n">X_test_pca</span><span class="p">,</span> <span class="n">y_test_pca</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="c1"># Evaluar modelos ajustados con Random Search</span>
+<span class="n">metrics_data_random</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;Random Lasso Regression&#39;</span><span class="p">:</span> <span class="n">evaluate_test_metrics</span><span class="p">(</span><span class="n">lasso_random_search</span><span class="p">,</span> <span class="n">X_test_pca</span><span class="p">,</span> <span class="n">y_test_pca</span><span class="p">),</span>
+    <span class="s1">&#39;Random Ridge Regression&#39;</span><span class="p">:</span> <span class="n">evaluate_test_metrics</span><span class="p">(</span><span class="n">ridge_random_search</span><span class="p">,</span> <span class="n">X_test_pca</span><span class="p">,</span> <span class="n">y_test_pca</span><span class="p">),</span>
+    <span class="s1">&#39;Random Random Forest&#39;</span><span class="p">:</span> <span class="n">evaluate_test_metrics</span><span class="p">(</span><span class="n">rf_random_search</span><span class="p">,</span> <span class="n">X_test_pca</span><span class="p">,</span> <span class="n">y_test_pca</span><span class="p">),</span>
+    <span class="s1">&#39;Random Bagging Ensamble&#39;</span><span class="p">:</span> <span class="n">evaluate_test_metrics</span><span class="p">(</span><span class="n">bagging_random_search</span><span class="p">,</span> <span class="n">X_test_pca</span><span class="p">,</span> <span class="n">y_test_pca</span><span class="p">),</span>
+    <span class="s1">&#39;Random XGBoost&#39;</span><span class="p">:</span> <span class="n">evaluate_test_metrics</span><span class="p">(</span><span class="n">xgboost_random_search</span><span class="p">,</span> <span class="n">X_test_pca</span><span class="p">,</span> <span class="n">y_test_pca</span><span class="p">),</span>
+    <span class="s1">&#39;Random Stacking Ensamble&#39;</span><span class="p">:</span> <span class="n">evaluate_test_metrics</span><span class="p">(</span><span class="n">stacking_random_search</span><span class="p">,</span> <span class="n">X_test_pca</span><span class="p">,</span> <span class="n">y_test_pca</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="c1"># Combinar los resultados en un DataFrame</span>
+<span class="n">metrics_df_combined_test</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="o">**</span><span class="n">metrics_data_grid</span><span class="p">,</span> <span class="o">**</span><span class="n">metrics_data_random</span><span class="p">})</span><span class="o">.</span><span class="n">T</span>
+
+<span class="n">metrics_df_combined_test</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Test MSE</th>
+      <th>Test RMSE</th>
+      <th>Test MAE</th>
+      <th>Test R^2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Grid Lasso Regression</th>
+      <td>8.211933</td>
+      <td>2.865647</td>
+      <td>2.260637</td>
+      <td>0.599516</td>
+    </tr>
+    <tr>
+      <th>Grid Ridge Regression</th>
+      <td>8.162244</td>
+      <td>2.856964</td>
+      <td>2.257929</td>
+      <td>0.601940</td>
+    </tr>
+    <tr>
+      <th>Grid Random Forest</th>
+      <td>10.742376</td>
+      <td>3.277556</td>
+      <td>2.487314</td>
+      <td>0.476111</td>
+    </tr>
+    <tr>
+      <th>Grid Bagging Ensamble</th>
+      <td>10.545058</td>
+      <td>3.247315</td>
+      <td>2.538797</td>
+      <td>0.485734</td>
+    </tr>
+    <tr>
+      <th>Grid XGBoost</th>
+      <td>10.091509</td>
+      <td>3.176714</td>
+      <td>2.422154</td>
+      <td>0.507852</td>
+    </tr>
+    <tr>
+      <th>Grid Stacking Ensamble</th>
+      <td>8.466230</td>
+      <td>2.909679</td>
+      <td>2.222486</td>
+      <td>0.587115</td>
+    </tr>
+    <tr>
+      <th>Random Lasso Regression</th>
+      <td>8.183609</td>
+      <td>2.860701</td>
+      <td>2.252615</td>
+      <td>0.600898</td>
+    </tr>
+    <tr>
+      <th>Random Ridge Regression</th>
+      <td>8.162227</td>
+      <td>2.856961</td>
+      <td>2.257883</td>
+      <td>0.601941</td>
+    </tr>
+    <tr>
+      <th>Random Random Forest</th>
+      <td>10.052729</td>
+      <td>3.170604</td>
+      <td>2.410570</td>
+      <td>0.509744</td>
+    </tr>
+    <tr>
+      <th>Random Bagging Ensamble</th>
+      <td>10.359306</td>
+      <td>3.218588</td>
+      <td>2.482785</td>
+      <td>0.494792</td>
+    </tr>
+    <tr>
+      <th>Random XGBoost</th>
+      <td>9.977500</td>
+      <td>3.158718</td>
+      <td>2.527940</td>
+      <td>0.513412</td>
+    </tr>
+    <tr>
+      <th>Random Stacking Ensamble</th>
+      <td>8.511531</td>
+      <td>2.917453</td>
+      <td>2.220763</td>
+      <td>0.584906</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>El modelo “Grid Ridge Regression” con un coeficiente de determinación (R^2) de 0.601940 indica que aproximadamente el 60.19% de la variabilidad en la variable objetivo G3 (la nota final de los estudiantes de secundaria en Portugal) puede ser explicada por las características y variables utilizadas en el modelo. Esto significa que el modelo tiene un buen ajuste a los datos y es capaz de capturar una parte significativa de la variabilidad en las notas finales de los estudiantes.</p>
+<p>Para explicar aún más cómo se relacionan las variables predictoras con la variable objetivo G3, puedes analizar los coeficientes de regresión asociados con cada una de las características en el modelo Ridge. Estos coeficientes te dirán cómo cambia la nota final (G3) en respuesta a cambios en las variables predictoras mientras se mantienen todas las demás constantes.</p>
+<p>teniendo la variable predictora como “estudio” que tiene un coeficiente positivo en el modelo, esto podría indicar que un aumento en el tiempo de estudio generalmente se asocia con un aumento en la nota final G3. Del mismo modo, la variable  “salir con amigos” con un coeficiente negativo, esto podría indicar que pasar más tiempo saliendo con amigos está asociado con una disminución en la nota final.</p>
+<p>y por ultimo se da a conocer tambien que cuando los estudiantes se encuentran en una relacion romantica afecta de manera negativa su rendimiento academico.</p>
+<p>CONCLUSIÓN</p>
+<p>Hoy en día, la mejora del rendimiento académico de los estudiantes con tecnología
+de predicción basada en el aprendizaje automático tiene una importancia cada vez
+más pragmática en las escuelas. El modelo de predicción académica puede liberar en
+gran medida a los profesores del laborioso análisis del rendimiento de los alumnos.
+Mientras tanto, los estudiantes pueden beneficiarse de una orientación más oportuna.
+En primer lugar antes de empezar con la implementacion de los modelos modelos se realizo el analisis exploratorio del conjunto de datos, luego se procede a aplicar componentes principales para reducir la dimencionalidad de los datos para asi proceder a la separacion de mi conjunto de datos en conjuntos de entrenamiento y prueba. Una vez establecido el conjunto de entrenamiento y prueba de procede con la implementacion de los modelos para elegir cual es el modelo que mejor explica la variabilidad de mis datos, haciendo  multiples pruebas llegamos a la conclusion que el modelo con mayor rendimiento fue El modelo “Grid Ridge Regression” con un coeficiente de determinación (R^2) de 0.601940 indica que aproximadamente el 60.19% de la variabilidad en la variable objetivo G3 (la nota final de los estudiantes de secundaria en Portugal) puede ser explicada por las características y variables utilizadas en el modelo. Esto significa que el modelo tiene un buen ajuste a los datos y es capaz de capturar una parte significativa de la variabilidad en las notas finales de los estudiantes. Para explicar aún más cómo se relacionan las variables predictoras con la variable objetivo G3, puedes analizar los coeficientes de regresión asociados con cada una de las características en el modelo Ridge. Estos coeficientes te dirán cómo cambia la nota final (G3) en respuesta a cambios en las variables predictoras mientras se mantienen todas las demás constantes.
+En futuros trabajos,mejoraremos el rendimiento del modelo de predicción para que pueda tener
+una aplicación más amplia. La predicción de las notas de los estudiantes es útil
+para que éstos completen sus estudios con éxito.</p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="markdown.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Markdown Files</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="markdown-notebooks.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Notebooks with MyST Markdown</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

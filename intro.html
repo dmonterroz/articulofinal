@@ -1,0 +1,541 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>UN MODELO HIBRIDO PARA PREDECIR EL RENDIMIENTO ACADEMICO DE LOS ESTUDIANTES DE SECUNDARIA DE DOS ESCUELAS EN PORTUGAL. &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Markdown Files" href="markdown.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="#">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1 current active">
+                <a class="reference internal" href="#">
+                    UN MODELO HIBRIDO PARA PREDECIR EL RENDIMIENTO ACADEMICO DE LOS ESTUDIANTES DE SECUNDARIA DE DOS ESCUELAS EN PORTUGAL.
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Codigos para obtener el resultado de mis estudios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/intro.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>UN MODELO HIBRIDO PARA PREDECIR EL RENDIMIENTO ACADEMICO DE LOS ESTUDIANTES DE SECUNDARIA DE DOS ESCUELAS EN PORTUGAL.</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="un-modelo-hibrido-para-predecir-el-rendimiento-academico-de-los-estudiantes-de-secundaria-de-dos-escuelas-en-portugal">
+<h1>UN MODELO HIBRIDO PARA PREDECIR EL RENDIMIENTO ACADEMICO DE LOS ESTUDIANTES DE SECUNDARIA DE DOS ESCUELAS EN PORTUGAL.<a class="headerlink" href="#un-modelo-hibrido-para-predecir-el-rendimiento-academico-de-los-estudiantes-de-secundaria-de-dos-escuelas-en-portugal" title="Permalink to this heading">#</a></h1>
+<p>RESUMEN</p>
+<p>Predecir el rendimiento académico de los estudiantes de secundaria de dos escuelas portuguesas es crucial para que
+los profesores apliquen intervenciones didácticas. Los investigadores han prestado
+mucha atención a cómo utilizar los registros de comportamiento de los estudiantes para
+predecir las calificaciones escolares. Por lo que han existido muchos estudios en donde se han porpuesto varios metodos
+de aprendizaje automatico para predecir el rendimiento de los estudiantes de secundaria atraves de registros de aprendizaje.  Sin embargo, uno de los mayores retos actuales es que muchos investigadores ignoran el problema de la
+reducción de la precisión de los modelos de predicción debido al desequilibrio de los
+datos. Al mismo tiempo, un único clasificador es susceptible a los cambios de datos y
+tiene un rendimiento de clasificación inestable. Con este fin, este trabajo propone un enfonque hibrido haciendo pruebas de multiples modelos como Random Lasso Regression,Random Ridge Regression,Random Random Forest,Random Bagging Ensamble,Random XGBoost y Random Stacking Ensamble, haciendo los respectivos estudios para escoger el que mejor prediga el rendimiento academico de los estudiantes de secundaria de dos escuelas en portugal.</p>
+<p>Palabras clave: Predicción del rendimiento académico; aprendizaje automático; Random Lasso Regression;Random Ridge Regression;Random Random Forest;Random Bagging Ensamble;Random XGBoost y Random Stacking Ensamble.</p>
+<p>INTRODUCCIÓN</p>
+<p>Con el desarrollo de la información educativa, se ha creado un gran número de
+datos de los estudiantes, que registran detalladamente su comportamiento y
+rendimiento académico.Estos datos de los estudiantes contienen información
+potencialmente valiosa, que se utiliza para el análisis del comportamiento de los estudiantes, la predicción de su rendimiento académico, la evaluación personalizada y otras <a class="reference external" href="http://investigaciones.La">investigaciones.La</a> investigación muestra que el debate
+estructurado en línea, la interacción entre profesores y estudiantes, la autoeficacia, los conocimientos previos y la motivación previa son cruciales para el éxito académico. Entre ellos, la predicción del rendimiento académico de los estudiantes ha cobrado especial importancia y ha atraído la atención de los educadores. Ayuda a los profesores a identificar eficazmente a los estudiantes con bajo rendimiento y a guiarlos para que adopten estrategias de estudio adecuadas para mejorar el rendimiento académico. En la actualidad, el aprendizaje
+automático es un método de predicción eficaz.
+El aprendizaje automatico se aplica ampliamente en diversos campos, como la
+predicción médica, la predicción del riesgo bancario y la predicción del flujo de
+tráfico, entre otros. El aprendizaje automático para la educación ha ganado
+más atención por parte de los investigadores educativos. Los investigadores
+suelen aplicar el aprendizaje automático para predecir el rendimiento académico de los
+estudiantes basándose en los datos académicos de los estudiantes. Los estudios
+han indicado que los modelos de aprendizaje automático pueden identificar con
+antelación a los estudiantes con bajo rendimiento académico, ayudando a los
+profesores a dar a los estudiantes una orientación adecuada.</p>
+<p>En consecuencia este articulo propone un modelo de prediccion para abordar los problemas de investigacion mencionados.</p>
+<p>TRABAJOS RELACIONADOS</p>
+<p>Muchos modelos tradicionales de aprendizaje automático se han empleado
+ampliamente en la construcción de clasificadores para predecir el rendimiento
+académico de estudiantes de diferentes niveles. Sin embargo, la mayoría de los
+trabajos de clasificación asumen que el espacio de datos es equilibrado y
+suficiente.Aunque, de hecho, el problema de los datos desequilibrados existe en
+muchas aplicaciones de clasificadores de predicción académica. Por lo tanto, es
+necesario modificar los clasificadores tradicionales.38
+Para aumentar la precisión de la predicción del rendimiento académico de los
+estudiantes, muchos trabajos de investigación se han centrado en el campo de la
+clasificación desequilibrada. Sun et al.39 propusieron un método conjunto
+novedoso para tratar datos binarios desequilibrados. Zhang et al.40, teniendo en
+cuenta las características de los datos desequilibrados, construyeron un conjunto
+de datos de entrenamiento etiquetados con equilibrio de clases y aprendieron un
+gráfico disperso. Aprovechan el muestreo de puntuación laplaciana y la
+representación dispersa. Aunque estos trabajos se centran en el procesamiento de
+datos desequilibrados, no tienen en cuenta la limitación de los datos. Los datos
+limitados pueden influir en el rendimiento del clasificador de datos
+desequilibrados. Para superar el problema de los datos desequilibrados de un
+pequeño número de conjuntos de datos, Guarn et al.41 aplicaron técnicas sensibles a los costes a grandes conjuntos de datos. Mientras tanto, el algoritmo
+MetaCost42 utilizaba una matriz de costes para especificar los costes relativos de
+cada decisión del clasificador. Sin embargo, el conjunto de datos se recopila al
+final del periodo académico, por lo que el tiempo de recopilación de datos es
+relativamente tardío. Almutairi et al.43 aplicaron la tecnología SMOTE y la
+tecnología de clasificación para predecir el rendimiento de todas las
+características de los datos de Kalboard 360.</p>
+<p>conjunto. Sin embargo, no se utilizaron otros datos de otra escuela para aumentar el
+tamaño del conjunto de datos y verificar el modelo. SMOTE es uno de los
+métodos populares para mejorar el rendimiento cuando un modelo clasifica datos
+desequilibrados añadiendo un pequeño número de muestras generadas para cambiar
+la distribución de datos del conjunto de datos desequilibrados. Algunos autores han
+utilizado este método en nuestro c o n j u n t o d e datos, por lo que utilizamos la
+tecnología SMOTE para tratar conjuntos de datos desequilibrados con el fin de
+reducir el impacto del desequilibrio de datos en el rendimiento del modelo.</p>
+<p>EXPLICACION SOBRE EL MODELO A UTILIZAR</p>
+<p>Grid Ridge Regression</p>
+<p>La “Grid Ridge Regression” es una técnica de regresión que se basa en la regresión lineal regularizada conocida como “Ridge Regression” o “Regresión Ridge”. La regresión Ridge es una variante de la regresión lineal ordinaria que se utiliza para abordar el problema de la multicolinealidad en los datos y para prevenir la sobreajuste del modelo.</p>
+<p>A continuación, se explican los conceptos clave de la Ridge Regression y cómo funciona:</p>
+<p>1.Regresión Lineal Ordinaria: En la regresión lineal ordinaria, se busca encontrar los coeficientes (ponderaciones) que mejor ajusten una relación lineal entre las variables predictoras (características) y la variable objetivo (la variable que se está tratando de predecir). El objetivo es minimizar la suma de los errores cuadráticos entre las predicciones del modelo y los valores reales.</p>
+<p>2.Multicolinealidad: La multicolinealidad es un problema que ocurre cuando dos o más variables predictoras están altamente correlacionadas entre sí. Esto puede causar inestabilidad en los coeficientes estimados y dificultar la interpretación del modelo.</p>
+<p>3.Regresión Ridge: La Regresión Ridge aborda la multicolinealidad al agregar un término de penalización a la función de costo utilizada en la regresión lineal. Este término de penalización, llamado término de regularización L2, penaliza los coeficientes grandes y ayuda a reducir su magnitud. Como resultado, la Regresión Ridge tiende a dar como resultado coeficientes más pequeños y más estables, lo que es útil cuando se tienen variables altamente correlacionadas.</p>
+<p>4.Parámetro de Regularización: La Regresión Ridge introduce un parámetro de regularización (lambda o alpha) que controla la cantidad de penalización aplicada a los coeficientes. Un valor más alto de lambda conduce a una mayor penalización y coeficientes más pequeños, lo que puede reducir el riesgo de sobreajuste.</p>
+<p>5.Grid Ridge Regression: La “Grid Ridge Regression” es una variante de la Regresión Ridge en la que se realiza una búsqueda en una “rejilla” de valores de lambda para encontrar el mejor valor de regularización. Se prueban varios valores de lambda y se elige el que produce el mejor rendimiento del modelo en función de una métrica de evaluación (como el error cuadrático medio, R cuadrado, etc.).</p>
+<p>En resumen, la “Grid Ridge Regression” es un enfoque que utiliza la Regresión Ridge con una búsqueda sistemática de valores de regularización para encontrar el mejor modelo de regresión con el equilibrio adecuado entre ajuste y estabilidad en presencia de multicolinealidad. Este método es útil en la modelización de datos cuando se sospecha o se sabe que las variables predictoras están altamente correlacionadas.</p>
+<p>CONJUNTO DE DATOS</p>
+<p>Inicialmente la base de datos cuenta con 395 observaciones contenidas en 33 variables de las cuales 16 son de tipo caracter y 17 son numericas, de las 16 variables de tipo caracter se logra identificar que la mayoria de ellas son variables binarias o discretas por lo que se pueden convertir a variables numericas y por tanto pueden ser incluidas en el estudio.</p>
+<p>En este trabajo analizaremos datos reales de dos escuelas de secundaria en portugal como las calificaciones, el numero de ausencias, datos demograficos, entre otros. El objetivo es predecir el rendimiento academico del estudiante e identificar las variables claves que afectan el exito academico.</p>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="right-next"
+       href="markdown.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Markdown Files</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
